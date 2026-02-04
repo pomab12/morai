@@ -1,0 +1,12 @@
+{
+  "name": "marai",
+  "version": "1.0.0",
+  "description": "",
+  "main": "login-script.js",
+  "scripts": {
+    "start": ""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

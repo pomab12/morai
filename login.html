@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login | Morai</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="login-style.css">
+</head>
+<body>
+  <div class="login-container">
+    <!-- Left Panel with Branding and Visual -->
+    <div class="left-panel">
+      <div class="logo">
+        <i class="fas fa-cube"></i>
+        <span>Morai</span>
+      </div>
+      
+      <div class="visual-content">
+        <div class="abstract-shapes">
+          <div class="shape shape-1"></div>
+          <div class="shape shape-2"></div>
+          <div class="shape shape-3"></div>
+        </div>
+        
+        <div class="welcome-text">
+          <h1>Welcome Back</h1>
+          <p>Sign in to continue to your Morai dashboard and access all your projects and analytics.</p>
+        </div>
+        
+        <div class="features-list">
+          <div class="feature-item">
+            <i class="fas fa-shield-alt"></i>
+            <div>
+              <h4>Enterprise Security</h4>
+              <p>Bank-level encryption</p>
+            </div>
+          </div>
+          
+          <div class="feature-item">
+            <i class="fas fa-rocket"></i>
+            <div>
+              <h4>Lightning Fast</h4>
+              <p>Optimized performance</p>
+            </div>
+          </div>
+          
+          <div class="feature-item">
+            <i class="fas fa-chart-line"></i>
+            <div>
+              <h4>Real-Time Analytics</h4>
+              <p>Instant insights</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="testimonial">
+        <div class="quote">
+          <i class="fas fa-quote-left"></i>
+          <p>"Morai has transformed how our team collaborates and manages projects. The security and performance are exceptional."</p>
+        </div>
+        <div class="author">
+          <div class="avatar">
+            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=100&q=80" alt="User">
+          </div>
+          <div class="author-info">
+            <h5>Hailemichael Assefa</h5>
+            <p>CEO, TechSphere</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Right Panel with Login Form -->
+    <div class="right-panel">
+      <div class="form-container">
+        <div class="form-header">
+          <h2>Sign In to Your Account</h2>
+          <p>Enter your credentials to access your dashboard</p>
+        </div>
+        
+        <form id="loginForm">
+          <div class="input-group">
+            <label for="email">Email Address</label>
+            <div class="input-with-icon">
+              <i class="fas fa-envelope"></i>
+              <input type="email" id="email" placeholder="name@company.com" required>
+            </div>
+            <div class="error-message" id="emailError"></div>
+          </div>
+          
+          <div class="input-group">
+            <div class="label-row">
+              <label for="password">Password</label>
+              <a href="#" class="forgot-link">Forgot password?</a>
+            </div>
+            <div class="input-with-icon">
+              <i class="fas fa-lock"></i>
+              <input type="password" id="password" placeholder="Enter your password" required>
+              <button type="button" class="toggle-password" id="togglePassword">
+                <i class="fas fa-eye"></i>
+              </button>
+            </div>
+            <div class="error-message" id="passwordError"></div>
+          </div>
+          
+          <div class="options-row">
+            <div class="checkbox-group">
+              <input type="checkbox" id="remember">
+              <label for="remember">Remember me</label>
+            </div>
+          </div>
+          
+          <button type="submit" class="submit-btn">
+            <span>Sign In</span>
+            <i class="fas fa-arrow-right"></i>
+          </button>
+          
+          <div class="divider">
+            <span>Or continue with</span>
+          </div>
+          
+          <div class="social-login">
+            <button type="button" class="social-btn google-btn">
+              <i class="fab fa-google"></i>
+              <span>Google</span>
+            </button>
+            <button type="button" class="social-btn github-btn">
+              <i class="fab fa-github"></i>
+              <span>GitHub</span>
+            </button>
+          </div>
+          
+          <div class="signup-link">
+            <p>Don't have an account? <a href="#">Sign up for free</a></p>
+          </div>
+        </form>
+        
+        <div class="security-notice">
+          <i class="fas fa-shield-check"></i>
+          <p>Your data is protected with 256-bit SSL encryption</p>
+        </div>
+      </div>
+      
+      <div class="back-home">
+        <a href="index.html">
+          <i class="fas fa-arrow-left"></i>
+          <span>Back to Homepage</span>
+        </a>
+      </div>
+    </div>
+    
+    <!-- Loading Overlay -->
+    <div class="loading-overlay" id="loadingOverlay">
+      <div class="loader">
+        <div class="loader-circle"></div>
+        <p>Authenticating...</p>
+      </div>
+    </div>
+    
+    <!-- Success Modal -->
+    <div class="modal-overlay" id="successModal">
+      <div class="modal">
+        <div class="modal-icon success">
+          <i class="fas fa-check-circle"></i>
+        </div>
+        <h3>Login Successful!</h3>
+        <p>Redirecting you to your dashboard...</p>
+        <div class="progress-bar">
+          <div class="progress-fill"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script src="login-script.js"></script>
+</body>
+</html>

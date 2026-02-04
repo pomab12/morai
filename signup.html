@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up | NexusFlow</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="signup-style.css">
+</head>
+<body>
+  <div class="signup-container">
+    <!-- Left Panel with Branding and Visual -->
+    <div class="left-panel">
+      <div class="logo">
+        <i class="fas fa-cube"></i>
+        <span>NexusFlow</span>
+      </div>
+      
+      <div class="visual-content">
+        <div class="abstract-shapes">
+          <div class="shape shape-1"></div>
+          <div class="shape shape-2"></div>
+          <div class="shape shape-3"></div>
+        </div>
+        
+        <div class="welcome-text">
+          <h1>Start Your Journey</h1>
+          <p>Join thousands of forward-thinking companies that use NexusFlow to drive innovation and growth.</p>
+        </div>
+        
+        <div class="benefits-grid">
+          <div class="benefit-card">
+            <div class="benefit-icon">
+              <i class="fas fa-rocket"></i>
+            </div>
+            <h4>14-Day Free Trial</h4>
+            <p>Full access to all premium features</p>
+          </div>
+          
+          <div class="benefit-card">
+            <div class="benefit-icon">
+              <i class="fas fa-users"></i>
+            </div>
+            <h4>Team Collaboration</h4>
+            <p>Invite unlimited team members</p>
+          </div>
+          
+          <div class="benefit-card">
+            <div class="benefit-icon">
+              <i class="fas fa-headset"></i>
+            </div>
+            <h4>Priority Support</h4>
+            <p>24/7 customer success team</p>
+          </div>
+          
+          <div class="benefit-card">
+            <div class="benefit-icon">
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <h4>Growth Insights</h4>
+            <p>Advanced analytics dashboard</p>
+          </div>
+        </div>
+        
+        <div class="stats-section">
+          <div class="stat-item">
+            <h3>10,000+</h3>
+            <p>Companies Trust Us</p>
+          </div>
+          <div class="stat-item">
+            <h3>99.9%</h3>
+            <p>Uptime SLA</p>
+          </div>
+          <div class="stat-item">
+            <h3>24/7</h3>
+            <p>Support Available</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="testimonial">
+        <div class="quote">
+          <i class="fas fa-quote-left"></i>
+          <p>"Switching to NexusFlow was the best decision we made. Our team's productivity increased by 40% in the first month."</p>
+        </div>
+        <div class="author">
+          <div class="avatar">
+            <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=100&q=80" alt="User">
+          </div>
+          <div class="author-info">
+            <h5>Sarah Chen</h5>
+            <p>Product Manager, InnovateCorp</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Right Panel with Sign Up Form -->
+    <div class="right-panel">
+      <div class="form-header">
+        <div class="progress-steps">
+          <div class="step active">
+            <div class="step-number">1</div>
+            <span>Account</span>
+          </div>
+          <div class="step-line"></div>
+          <div class="step">
+            <div class="step-number">2</div>
+            <span>Company</span>
+          </div>
+          <div class="step-line"></div>
+          <div class="step">
+            <div class="step-number">3</div>
+            <span>Team</span>
+          </div>
+        </div>
+        
+        <h2>Create Your Account</h2>
+        <p>Start your 14-day free trial. No credit card required.</p>
+      </div>
+      
+      <form id="signupForm">
+        <div class="form-section">
+          <h3>Personal Information</h3>
+          
+          <div class="input-row">
+            <div class="input-group">
+              <label for="firstName">First Name *</label>
+              <div class="input-with-icon">
+                <i class="fas fa-user"></i>
+                <input type="text" id="firstName" placeholder="John" required>
+              </div>
+              <div class="error-message" id="firstNameError"></div>
+            </div>
+            
+            <div class="input-group">
+              <label for="lastName">Last Name *</label>
+              <div class="input-with-icon">
+                <i class="fas fa-user"></i>
+                <input type="text" id="lastName" placeholder="Doe" required>
+              </div>
+              <div class="error-message" id="lastNameError"></div>
+            </div>
+          </div>
+          
+          <div class="input-group">
+            <label for="email">Work Email *</label>
+            <div class="input-with-icon">
+              <i class="fas fa-envelope"></i>
+              <input type="email" id="email" placeholder="name@company.com" required>
+            </div>
+            <div class="error-message" id="emailError"></div>
+          </div>
+          
+          <div class="input-row">
+            <div class="input-group">
+              <label for="password">Password *</label>
+              <div class="input-with-icon">
+                <i class="fas fa-lock"></i>
+                <input type="password" id="password" placeholder="Create a password" required>
+                <button type="button" class="toggle-password" id="togglePassword">
+                  <i class="fas fa-eye"></i>
+                </button>
+              </div>
+              <div class="error-message" id="passwordError"></div>
+            </div>
+            
+            <div class="input-group">
+              <label for="confirmPassword">Confirm Password *</label>
+              <div class="input-with-icon">
+                <i class="fas fa-lock"></i>
+                <input type="password" id="confirmPassword" placeholder="Confirm password" required>
+              </div>
+              <div class="error-message" id="confirmPasswordError"></div>
+            </div>
+          </div>
+          
+          <div class="password-strength">
+            <div class="strength-label">
+              <span>Password Strength:</span>
+              <span id="strengthText">Weak</span>
+            </div>
+            <div class="strength-meter">
+              <div class="strength-bar" id="strengthBar"></div>
+            </div>
+            <ul class="password-requirements">
+              <li id="reqLength">At least 8 characters</li>
+              <li id="reqUppercase">One uppercase letter</li>
+              <li id="reqNumber">One number</li>
+              <li id="reqSpecial">One special character</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="form-section">
+          <h3>Company Information</h3>
+          
+          <div class="input-group">
+            <label for="companyName">Company Name *</label>
+            <div class="input-with-icon">
+              <i class="fas fa-building"></i>
+              <input type="text" id="companyName" placeholder="Your company name" required>
+            </div>
+            <div class="error-message" id="companyNameError"></div>
+          </div>
+          
+          <div class="input-group">
+            <label for="companySize">Company Size *</label>
+            <div class="input-select">
+              <i class="fas fa-users"></i>
+              <select id="companySize" required>
+                <option value="" disabled selected>Select company size</option>
+                <option value="1-10">1-10 employees</option>
+                <option value="11-50">11-50 employees</option>
+                <option value="51-200">51-200 employees</option>
+                <option value="201-500">201-500 employees</option>
+                <option value="501-1000">501-1000 employees</option>
+                <option value="1000+">1000+ employees</option>
+              </select>
+            </div>
+          </div>
+          
+          <div class="input-group">
+            <label for="industry">Industry</label>
+            <div class="input-select">
+              <i class="fas fa-industry"></i>
+              <select id="industry">
+                <option value="" selected>Select your industry</option>
+                <option value="tech">Technology</option>
+                <option value="finance">Finance</option>
+                <option value="healthcare">Healthcare</option>
+                <option value="education">Education</option>
+                <option value="retail">Retail</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+          </div>
+          
+          <div class="checkbox-group">
+            <input type="checkbox" id="updates">
+            <label for="updates">Send me product updates, tips, and offers from NexusFlow</label>
+          </div>
+          
+          <div class="checkbox-group terms">
+            <input type="checkbox" id="terms" required>
+            <label for="terms">I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a> *</label>
+          </div>
+        </div>
+        
+        <div class="form-actions">
+          <button type="submit" class="submit-btn">
+            <span>Create Account</span>
+            <i class="fas fa-arrow-right"></i>
+          </button>
+          
+          <div class="divider">
+            <span>Or sign up with</span>
+          </div>
+          
+          <div class="social-signup">
+            <button type="button" class="social-btn google-btn">
+              <i class="fab fa-google"></i>
+              <span>Google</span>
+            </button>
+            <button type="button" class="social-btn microsoft-btn">
+              <i class="fab fa-microsoft"></i>
+              <span>Microsoft</span>
+            </button>
+            <button type="button" class="social-btn github-btn">
+              <i class="fab fa-github"></i>
+              <span>GitHub</span>
+            </button>
+          </div>
+          
+          <div class="login-link">
+            <p>Already have an account? <a href="login.html">Sign in here</a></p>
+          </div>
+        </div>
+      </form>
+      
+      <div class="security-notice">
+        <i class="fas fa-shield-check"></i>
+        <p>Your data is protected with enterprise-grade security. We never share your information.</p>
+      </div>
+      
+      <div class="back-home">
+        <a href="index.html">
+          <i class="fas fa-arrow-left"></i>
+          <span>Back to Homepage</span>
+        </a>
+      </div>
+    </div>
+    
+    <!-- Loading Overlay -->
+    <div class="loading-overlay" id="loadingOverlay">
+      <div class="loader">
+        <div class="loader-circle"></div>
+        <p>Creating your account...</p>
+      </div>
+    </div>
+    
+    <!-- Success Modal -->
+    <div class="modal-overlay" id="successModal">
+      <div class="modal">
+        <div class="modal-icon success">
+          <i class="fas fa-check-circle"></i>
+        </div>
+        <h3>Account Created Successfully!</h3>
+        <p>Welcome to NexusFlow! Your 14-day free trial has started. We're setting up your dashboard...</p>
+        <div class="modal-features">
+          <div class="modal-feature">
+            <i class="fas fa-rocket"></i>
+            <span>Full platform access</span>
+          </div>
+          <div class="modal-feature">
+            <i class="fas fa-video"></i>
+            <span>Onboarding tutorial available</span>
+          </div>
+          <div class="modal-feature">
+            <i class="fas fa-headset"></i>
+            <span>Priority support enabled</span>
+          </div>
+        </div>
+        <button class="modal-btn" id="goToDashboard">Continue to Dashboard</button>
+        <p class="modal-note">Check your email for verification link</p>
+      </div>
+    </div>
+  </div>
+  
+  <script src="signup-script.js"></script>
+</body>
+</html>
