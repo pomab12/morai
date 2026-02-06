@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pricing | Morai</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="pricing-style.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="logo">
+      <i class="fas fa-cube"></i>
+      <span>Morai</span>
+    </div>
+    
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="index.html#features">Features</a></li>
+      <li><a href="index.html#solutions">Solutions</a></li>
+      <li><a href="pricing.html" class="active">Pricing</a></li>
+      <li><a href="#resources">Resources</a></li>
+    </ul>
+    
+    <div class="nav-actions">
+      <a href="login.html" class="login-btn">Log In</a>
+      <a href="signup.html" class="get-started-btn">Get Started</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="pricing-hero">
+    <div class="hero-content">
+      <span class="hero-badge">Transparent Pricing</span>
+      <h1>Simple, Flexible Plans for <span>Every Team</span></h1>
+      <p>Choose the perfect plan for your needs. All plans include core features with no hidden fees. Start with a 14-day free trial.</p>
+      
+      <div class="toggle-switch">
+        <span class="toggle-label">Monthly</span>
+        <div class="toggle-container">
+          <input type="checkbox" id="billingToggle" class="toggle-checkbox">
+          <label for="billingToggle" class="toggle-slider"></label>
+        </div>
+        <span class="toggle-label active">Yearly <span class="discount-badge">Save 20%</span></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Cards -->
+  <section class="pricing-cards">
+    <div class="pricing-grid">
+      <!-- Starter Plan -->
+      <div class="pricing-card">
+        <div class="plan-header">
+          <div class="plan-icon">
+            <i class="fas fa-seedling"></i>
+          </div>
+          <h3>Starter</h3>
+          <p class="plan-description">Perfect for individuals and small teams</p>
+          
+          <div class="price-container">
+            <div class="price monthly-price">
+              <span class="currency">$</span>
+              <span class="amount">29</span>
+              <span class="period">/month</span>
+            </div>
+            <div class="price yearly-price hidden">
+              <span class="currency">$</span>
+              <span class="amount">23</span>
+              <span class="period">/month</span>
+              <span class="billing-note">billed annually</span>
+            </div>
+          </div>
+          
+          <a href="signup.html?plan=starter" class="plan-btn">Start Free Trial</a>
+        </div>
+        
+        <div class="plan-features">
+          <h4>Everything in Starter:</h4>
+          <ul>
+            <li><i class="fas fa-check"></i> <span>Up to 5 team members</span></li>
+            <li><i class="fas fa-check"></i> <span>50 GB storage</span></li>
+            <li><i class="fas fa-check"></i> <span>Basic analytics</span></li>
+            <li><i class="fas fa-check"></i> <span>Email support</span></li>
+            <li><i class="fas fa-check"></i> <span>5 projects</span></li>
+            <li><i class="fas fa-check"></i> <span>Standard security</span></li>
+          </ul>
+        </div>
+      </div>
+      
+      <!-- Professional Plan (Recommended) -->
+      <div class="pricing-card featured">
+        <div class="featured-badge">Most Popular</div>
+        <div class="plan-header">
+          <div class="plan-icon">
+            <i class="fas fa-rocket"></i>
+          </div>
+          <h3>Professional</h3>
+          <p class="plan-description">For growing teams with advanced needs</p>
+          
+          <div class="price-container">
+            <div class="price monthly-price">
+              <span class="currency">$</span>
+              <span class="amount">79</span>
+              <span class="period">/month</span>
+            </div>
+            <div class="price yearly-price hidden">
+              <span class="currency">$</span>
+              <span class="amount">63</span>
+              <span class="period">/month</span>
+              <span class="billing-note">billed annually</span>
+            </div>
+          </div>
+          
+          <a href="signup.html?plan=professional" class="plan-btn featured-btn">Start Free Trial</a>
+        </div>
+        
+        <div class="plan-features">
+          <h4>Everything in Professional:</h4>
+          <ul>
+            <li><i class="fas fa-check"></i> <span>Up to 20 team members</span></li>
+            <li><i class="fas fa-check"></i> <span>200 GB storage</span></li>
+            <li><i class="fas fa-check"></i> <span>Advanced analytics</span></li>
+            <li><i class="fas fa-check"></i> <span>Priority support</span></li>
+            <li><i class="fas fa-check"></i> <span>Unlimited projects</span></li>
+            <li><i class="fas fa-check"></i> <span>Advanced security</span></li>
+            <li><i class="fas fa-check"></i> <span>Custom integrations</span></li>
+            <li><i class="fas fa-check"></i> <span>API access</span></li>
+          </ul>
+        </div>
+      </div>
+      
+      <!-- Enterprise Plan -->
+      <div class="pricing-card">
+        <div class="plan-header">
+          <div class="plan-icon">
+            <i class="fas fa-crown"></i>
+          </div>
+          <h3>Enterprise</h3>
+          <p class="plan-description">For large organizations with custom needs</p>
+          
+          <div class="price-container">
+            <div class="price">
+              <span class="custom-price">Custom Pricing</span>
+            </div>
+          </div>
+          
+          <a href="#contact" class="plan-btn enterprise-btn">Contact Sales</a>
+        </div>
+        
+        <div class="plan-features">
+          <h4>Everything in Enterprise:</h4>
+          <ul>
+            <li><i class="fas fa-check"></i> <span>Unlimited team members</span></li>
+            <li><i class="fas fa-check"></i> <span>Unlimited storage</span></li>
+            <li><i class="fas fa-check"></i> <span>AI-powered analytics</span></li>
+            <li><i class="fas fa-check"></i> <span>24/7 dedicated support</span></li>
+            <li><i class="fas fa-check"></i> <span>Unlimited projects</span></li>
+            <li><i class="fas fa-check"></i> <span>Enterprise security</span></li>
+            <li><i class="fas fa-check"></i> <span>Custom integrations</span></li>
+            <li><i class="fas fa-check"></i> <span>Advanced API access</span></li>
+            <li><i class="fas fa-check"></i> <span>SLA guarantee</span></li>
+            <li><i class="fas fa-check"></i> <span>Custom onboarding</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Comparison Table -->
+  <section class="comparison-section">
+    <div class="section-header">
+      <h2>Compare Plans in Detail</h2>
+      <p>See how our plans stack up against each other</p>
+    </div>
+    
+    <div class="comparison-table">
+      <div class="table-header">
+        <div class="feature-column">
+          <h4>Features</h4>
+        </div>
+        <div class="plan-column">
+          <h4>Starter</h4>
+          <div class="price-tag">$29/month</div>
+        </div>
+        <div class="plan-column featured">
+          <h4>Professional</h4>
+          <div class="price-tag">$79/month</div>
+        </div>
+        <div class="plan-column">
+          <h4>Enterprise</h4>
+          <div class="price-tag">Custom</div>
+        </div>
+      </div>
+      
+      <div class="table-body">
+        <!-- Team & Collaboration -->
+        <div class="table-category">
+          <h5>Team & Collaboration</h5>
+        </div>
+        
+        <div class="table-row">
+          <div class="feature-column">Team members</div>
+          <div class="plan-column">Up to 5</div>
+          <div class="plan-column featured">Up to 20</div>
+          <div class="plan-column">Unlimited</div>
+        </div>
+        
+        <div class="table-row">
+          <div class="feature-column">Projects</div>
+          <div class="plan-column">5 projects</div>
+          <div class="plan-column featured">Unlimited</div>
+          <div class="plan-column">Unlimited</div>
+        </div>
+        
+        <div class="table-row">
+          <div class="feature-column">Guest collaborators</div>
+          <div class="plan-column"><i class="fas fa-times"></i></div>
+          <div class="plan-column featured"><i class="fas fa-check"></i></div>
+          <div class="plan-column"><i class="fas fa-check"></i></div>
+        </div>
+        
+        <!-- Storage & Data -->
+        <div class="table-category">
+          <h5>Storage & Data</h5>
+        </div>
+        
+        <div class="table-row">
+          <div class="feature-column">Storage</div>
+          <div class="plan-column">50 GB</div>
+          <div class="plan-column featured">200 GB</div>
+          <div class="plan-column">Unlimited</div>
+        </div>
+        
+        <div class="table-row">
+          <div class="feature-column">File upload size</div>
+          <div class="plan-column">100 MB</div>
+          <div class="plan-column featured">1 GB</div>
+          <div class="plan-column">10 GB</div>
+        </div>
+        
+        <!-- Analytics & Insights -->
+        <div class="table-category">
+          <h5>Analytics & Insights</h5>
+        </div>
+        
+        <div class="table-row">
+          <div class="feature-column">Basic analytics</div>
+          <div class="plan-column"><i class="fas fa-check"></i></div>
+          <div class="plan-column featured"><i class="fas fa-check"></i></div>
+          <div class="plan-column"><i class="fas fa-check"></i></div>
+        </div>
+        
+        <div class="table-row">
+          <div class="feature-column">Advanced analytics</div>
+          <div class="plan-column"><i class="fas fa-times"></i></div>
+          <div class="plan-column featured"><i class="fas fa-check"></i></div>
+          <div class="plan-column"><i class="fas fa-check"></i></div>
+        </div>
+        
+        <div class="table-row">
+          <div class="feature-column">AI-powered insights</div>
+          <div class="plan-column"><i class="fas fa-times"></i></div>
+          <div class="plan-column featured"><i class="fas fa-times"></i></div>
+          <div class="plan-column"><i class="fas fa-check"></i></div>
+        </div>
+        
+        <!-- Security & Compliance -->
+        <div class="table-category">
+          <h5>Security & Compliance</h5>
+        </div>
+        
+        <div class="table-row">
+          <div class="feature-column">Standard security</div>
+          <div class="plan-column"><i class="fas fa-check"></i></div>
+          <div class="plan-column featured"><i class="fas fa-check"></i></div>
+          <div class="plan-column"><i class="fas fa-check"></i></div>
+        </div>
+        
+        <div class="table-row">
+          <div class="feature-column">Advanced security</div>
+          <div class="plan-column"><i class="fas fa-times"></i></div>
+          <div class="plan-column featured"><i class="fas fa-check"></i></div>
+          <div class="plan-column"><i class="fas fa-check"></i></div>
+        </div>
+        
+        <div class="table-row">
+          <div class="feature-column">SLA guarantee</div>
+          <div class="plan-column"><i class="fas fa-times"></i></div>
+          <div class="plan-column featured"><i class="fas fa-times"></i></div>
+          <div class="plan-column"><i class="fas fa-check"></i></div>
+        </div>
+        
+        <!-- Support -->
+        <div class="table-category">
+          <h5>Support & Onboarding</h5>
+        </div>
+        
+        <div class="table-row">
+          <div class="feature-column">Email support</div>
+          <div class="plan-column"><i class="fas fa-check"></i></div>
+          <div class="plan-column featured"><i class="fas fa-check"></i></div>
+          <div class="plan-column"><i class="fas fa-check"></i></div>
+        </div>
+        
+        <div class="table-row">
+          <div class="feature-column">Priority support</div>
+          <div class="plan-column"><i class="fas fa-times"></i></div>
+          <div class="plan-column featured"><i class="fas fa-check"></i></div>
+          <div class="plan-column"><i class="fas fa-check"></i></div>
+        </div>
+        
+        <div class="table-row">
+          <div class="feature-column">Dedicated support</div>
+          <div class="plan-column"><i class="fas fa-times"></i></div>
+          <div class="plan-column featured"><i class="fas fa-times"></i></div>
+          <div class="plan-column"><i class="fas fa-check"></i></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="faq-section">
+    <div class="section-header">
+      <h2>Frequently Asked Questions</h2>
+      <p>Find answers to common questions about our pricing and plans</p>
+    </div>
+    
+    <div class="faq-grid">
+      <div class="faq-item">
+        <div class="faq-question">
+          <h4>Can I change plans later?</h4>
+          <i class="fas fa-plus"></i>
+        </div>
+        <div class="faq-answer">
+          <p>Yes, you can upgrade or downgrade your plan at any time. Changes take effect immediately, and you'll only pay the difference for the rest of your billing cycle.</p>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <div class="faq-question">
+          <h4>Is there a free trial?</h4>
+          <i class="fas fa-plus"></i>
+        </div>
+        <div class="faq-answer">
+          <p>All paid plans come with a 14-day free trial. No credit card is required to start your trial. You can explore all features during this period.</p>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <div class="faq-question">
+          <h4>What payment methods do you accept?</h4>
+          <i class="fas fa-plus"></i>
+        </div>
+        <div class="faq-answer">
+          <p>We accept all major credit cards (Visa, MasterCard, American Express), PayPal, and wire transfers for enterprise plans.</p>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <div class="faq-question">
+          <h4>Do you offer discounts for non-profits?</h4>
+          <i class="fas fa-plus"></i>
+        </div>
+        <div class="faq-answer">
+          <p>Yes, we offer special pricing for registered non-profit organizations and educational institutions. Contact our sales team for more information.</p>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <div class="faq-question">
+          <h4>Can I cancel at any time?</h4>
+          <i class="fas fa-plus"></i>
+        </div>
+        <div class="faq-answer">
+          <p>Absolutely. You can cancel your subscription at any time. When you cancel, you'll continue to have access until the end of your billing period.</p>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <div class="faq-question">
+          <h4>Do you offer custom enterprise solutions?</h4>
+          <i class="fas fa-plus"></i>
+        </div>
+        <div class="faq-answer">
+          <p>Yes, our Enterprise plan is fully customizable. We can tailor the platform to your specific needs, including custom integrations, security requirements, and SLA guarantees.</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="faq-cta">
+      <p>Still have questions? <a href="#contact">Contact our sales team</a> for personalized assistance.</p>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section class="final-cta">
+    <div class="cta-content">
+      <h2>Ready to Transform Your Workflow?</h2>
+      <p>Join thousands of teams already using Morai to drive productivity and innovation.</p>
+      <div class="cta-buttons">
+        <a href="signup.html" class="primary-btn">Start Free Trial</a>
+        <a href="#contact" class="secondary-btn">Talk to Sales</a>
+      </div>
+      <p class="trial-note">No credit card required • 14-day free trial • Cancel anytime</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-column">
+        <div class="logo">
+          <i class="fas fa-cube"></i>
+          <span>Morai</span>
+        </div>
+        <p>Empowering businesses with cutting-edge SaaS solutions since 2018. We're on a mission to simplify complex workflows and drive digital transformation.</p>
+      </div>
+      
+      <div class="footer-column">
+        <h4>Product</h4>
+        <ul class="footer-links">
+          <li><a href="index.html#features">Features</a></li>
+          <li><a href="index.html#solutions">Solutions</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="#api">API</a></li>
+          <li><a href="#documentation">Documentation</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-column">
+        <h4>Company</h4>
+        <ul class="footer-links">
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#careers">Careers</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#press">Press</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-column">
+        <h4>Connect</h4>
+        <ul class="footer-links">
+          <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+          <li><a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+          <li><a href="#"><i class="fab fa-github"></i> GitHub</a></li>
+          <li><a href="#"><i class="fab fa-youtube"></i> YouTube</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>&copy; 2023 Morai. All rights reserved. | <a href="#" class="footer-link">Privacy Policy</a> | <a href="#" class="footer-link">Terms of Service</a></p>
+    </div>
+  </footer>
+
+  <script src="pricing-script.js"></script>
+</body>
+</html>
